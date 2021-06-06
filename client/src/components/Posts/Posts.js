@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, CircularProgress } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 import { useSelector } from "react-redux";
 
 import Post from "./Post/Post";
@@ -11,9 +11,7 @@ const Posts = ({ setCurrentId }) => {
 
   if (!posts.length && !isLoading) return "Belum ada ide yang diajukan";
 
-  return isLoading ? (
-    <CircularProgress />
-  ) : (
+  return isLoading ? null : (
     <Grid
       className={classes.container}
       container
