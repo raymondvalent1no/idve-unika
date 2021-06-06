@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://app-20n10011-idveunika.zeet.app",
+  baseURL: "http://localhost:5000",
 });
 
 API.interceptors.request.use((req) => {
